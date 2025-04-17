@@ -10,6 +10,10 @@ if (typeof userServer === 'undefined') {
 if (typeof userType === 'undefined') {
   var userType = "playlist"; // 替换为实际的默认值
 }
+const u0 = 'https://cdn.cbd.int/cansin-music-jaychou@1.0.0';
+const u0a = u0 + '/audio/';
+const u0c = u0 + '/cover/';
+const u0l = u0 + '/lrc/';
 const u3 = 'https://music.163.com/song/media/outer/url?id=';
 const u4 = 'https://registry.npmmirror.com/cansin-blogdata/latest/files/lrc/';
 var localMusic = [
