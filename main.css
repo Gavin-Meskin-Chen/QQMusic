@@ -170,6 +170,9 @@ body #nav-music {
   transform: scale(0.82, 0.86);
   z-index: -1;
   border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
   transition: all .3s ease;
 }
 
