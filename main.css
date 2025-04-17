@@ -170,6 +170,7 @@ body #nav-music {
   transform: scale(0.82, 0.86);
   z-index: -1;
   border-radius: 10px;
+  transition: all .3s ease;
 }
 
 #heoMusic-page.aplayer_playing .aplayer-pic-shadow {
