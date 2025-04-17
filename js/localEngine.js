@@ -1,8 +1,8 @@
 var encodedLocalMusic = localMusic.map(item => ({
-  name: item.name,
-  artist: item.artist,
+  title: item.title,
+  author: item.author,
   url: encodeNonAscii(item.url),
-  cover: encodeNonAscii(item.cover),
+  pic: encodeNonAscii(item.pic),
   lrc: encodeNonAscii(item.lrc)
 }));
 
