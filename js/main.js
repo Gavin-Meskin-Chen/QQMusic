@@ -12,7 +12,6 @@ if (typeof userType === 'undefined') {
 }
 
 if (typeof remoteMusic !== 'undefined' && remoteMusic) {
-  console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
   fetch(remoteMusic)
     .then(response => response.json())
     .then(data => {
@@ -26,7 +25,6 @@ if (typeof remoteMusic !== 'undefined' && remoteMusic) {
       loadMusicScript();
     });
 } else {
-  console.log("gggggggggggggggggggggggggggggggggggg")
   loadMusicScript();
 }
 
@@ -36,14 +34,12 @@ function loadMusicScript() {
     var script = document.createElement('script');
     script.src = './js/Meting.js';
     document.body.appendChild(script);
-    console.log("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
   } else {
     // 否则加载 localEngine.js
     var script = document.createElement('script');
     script.src = './js/localEngine.js';
     document.body.appendChild(script);
     local = true;
-    console.log("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
   }
 }
 
