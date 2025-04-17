@@ -364,7 +364,7 @@ body #nav-music {
   height: 100%;
   flex: 1;
   min-width: 200px;
-  margin: calc(-8px - 5px);
+  margin-right: calc(-8px - 5px);
   /* 列表margin 8px 加上 滚动条宽度 5px */
 }
  
