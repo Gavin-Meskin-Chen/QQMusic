@@ -161,6 +161,21 @@ body #nav-music {
   transform: scale(1);
 }
 
+#heoMusic-page .aplayer-pic-shadow {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 20px;
+  filter: blur(16px) opacity(0.56);
+  transform: scale(0.82, 0.86);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+#heoMusic-page.aplayer_playing .aplayer-pic-shadow {
+  transform: scale(0.92, 0.96);
+}
+
 #heoMusic-page .aplayer-info {
   border-bottom: none;
   height: 100%;
@@ -450,6 +465,7 @@ body #nav-music {
   height: 16px;
   width: 16px;
 }
+
 
 /* 导航栏 */
 .page #nav {
