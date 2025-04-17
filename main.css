@@ -216,7 +216,7 @@ body #nav-music {
   font-size: 36px;
   line-height: 1.38;
   margin-bottom: 0;
-  padding: 8px;
+  padding: 8px 14px;
   border-radius: 8px;
   color: #fff;
   font-weight: bold;
@@ -292,8 +292,8 @@ body #nav-music {
 
 @media screen and (max-width: 768px) {
   .aplayer .aplayer-lrc .aplayer-lrc-contents {
-    width: calc(100% - 40px);
-    padding: 200px 20px 600px 20px;
+    width: calc(100% - 30px);
+    padding: 200px 15px 600px 15px;
   }
 }
 
