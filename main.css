@@ -321,7 +321,10 @@ body #nav-music {
 }
 #heoMusic-page .aplayer-info .aplayer-time .aplayer-icon-play {
   position: absolute;
-  left: 40px;
+  left: 35px;
+  top: -5px;
+  width: 36px !important;
+  height: 36px !important;
 }
 #heoMusic-page .aplayer-info .aplayer-time .aplayer-icon-forward {
   position: absolute;
