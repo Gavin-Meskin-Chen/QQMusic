@@ -2,13 +2,13 @@ console.log("\n %c HeoMusic 开源静态音乐播放器 %c https://github.com/zh
 var local = false;
 
 if (typeof userId === 'undefined') {
-  var userId = "8152976493"; // 替换为实际的默认值
+  var userId = ""; // 替换为实际的默认值
 }
 if (typeof userServer === 'undefined') {
-  var userServer = "netease"; // 替换为实际的默认值
+  var userServer = ""; // 替换为实际的默认值
 }
 if (typeof userType === 'undefined') {
-  var userType = "playlist"; // 替换为实际的默认值
+  var userType = ""; // 替换为实际的默认值
 }
 
 if (typeof remoteMusic !== 'undefined' && remoteMusic) {
