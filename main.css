@@ -626,8 +626,8 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
     margin: auto;
     right: 0;
     left: 0;
-    width: 46px;
-    height: 46px;
+    width: 46px!important;
+    height: 46px!important;
   }
   #heoMusic-page .aplayer-info .aplayer-time .aplayer-icon-forward {
     margin: auto;
