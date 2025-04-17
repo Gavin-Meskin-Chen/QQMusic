@@ -163,6 +163,7 @@ body #nav-music {
 
 #heoMusic-page .aplayer-info {
   border-bottom: none;
+  height: 100%;
 }
 
 #heoMusic-page .aplayer-info .aplayer-music {
@@ -184,8 +185,8 @@ body #nav-music {
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  mask-image: linear-gradient(to bottom, #0000, #000 10%, #000 90%, #0000);
-  -webkit-mask-image: linear-gradient(to bottom, #0000, #000 10%, #000 90%, #0000);
+  mask-image: linear-gradient(to bottom, #0000, #000 30%, #000 70%, #0000);
+  -webkit-mask-image: linear-gradient(to bottom, #0000, #000 30%, #000 70%, #0000);
 }
 
 #heoMusic-page .aplayer-info .aplayer-lrc::-webkit-scrollbar {
@@ -584,18 +585,19 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
     left: 0;
     right: 0;
     top: 0;
-    height: calc(100dvh - 200px);
+    height: calc(100dvh - 170px);
   }
   #heoMusic-page .aplayer-info .aplayer-lrc {
     margin-top: 0;
-    height: calc(100dvh - 100px);
-    min-height: 100%;
-    mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #0000, #0000);
+    /* height: calc(100dvh - 100px); */
+    height: 100%;
+    mask-image: linear-gradient(to bottom, #0000, #000 20%, #000 80%, #0000);
+    -webkit-mask-image: linear-gradient(to bottom, #0000, #000 20%, #000 80%, #0000);
   }
   /* 控制按键和进度条 */
   #heoMusic-page .aplayer-info .aplayer-controller {
     width: 100%;
-    bottom: 120px;
+    bottom: 90px;
   }
   #heoMusic-page .aplayer-info .aplayer-controller .aplayer-bar-wrap {
     margin: 0 32px;
@@ -675,7 +677,7 @@ body .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.apla
   #heoMusic-page .aplayer-info .aplayer-music {
     display: flex;
     position: fixed;
-    top: calc(100dvh - 178px);
+    top: calc(100dvh - 148px);
     left: 0;
     margin: 0;
     margin-left: 32px;
