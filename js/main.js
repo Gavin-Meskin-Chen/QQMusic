@@ -323,8 +323,7 @@ window.addEventListener('resize', function() {
 function handScrollFunc(e) {
   handScrollFlag = 0;// 暂停自动滚动
   clearTimeout(handScrollTime)
-  console.log("自动滚动停止\n")
-  handScrollTime = setTimeout(()=>{handScrollFlag=1;heo.scrollLyric();console.log("自动滚动恢复\n")}, 2000);// 2秒后恢复自动滚动（如果用户没有新操作）
+  handScrollTime = setTimeout(()=>{handScrollFlag=1;heo.scrollLyric();}, 2000);// 2秒后恢复自动滚动（如果用户没有新操作）
 }
 window.onload = function () {
   // 监听手动滚动事件
