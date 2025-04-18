@@ -163,7 +163,7 @@ var heo = {
     if ('mediaSession' in navigator) {
       if (isSongPlaying && currentLrcContent) {
         songName = currentLrcContent;
-        songArtist = `${audio.artist}/${audio.name}`;
+        songArtist = `${audio.artist} | ${audio.name}`;
       } else {
         songName = audio.name;
         songArtist = audio.artist;
@@ -228,12 +228,14 @@ var heo = {
       aplayer.on('play', () => {
         if ('mediaSession' in navigator) {
           navigator.mediaSession.playbackState = 'playing';
+          heo.setMediaMetadata(aplayer, true);
         }
       });
 
       aplayer.on('pause', () => {
         if ('mediaSession' in navigator) {
           navigator.mediaSession.playbackState = 'paused';
+          heo.setMediaMetadata(aplayer, false);
         }
       });
 
@@ -323,7 +325,7 @@ window.addEventListener('resize', function() {
 function handScrollFunc(e) {
   handScrollFlag = 0;// 暂停自动滚动
   clearTimeout(handScrollTime)
-  handScrollTime = setTimeout(()=>{handScrollFlag=1;heo.scrollLyric();}, 2000);// 2秒后恢复自动滚动（如果用户没有新操作）
+  handScrollTime = setTimeout(()=>{handScrollFlag=1;heo.scrollLyric();}, 3000);// 3秒后恢复自动滚动（如果用户没有新操作）
 }
 window.onload = function () {
   // 监听手动滚动事件
