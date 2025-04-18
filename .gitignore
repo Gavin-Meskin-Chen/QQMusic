@@ -3,3 +3,7 @@
 /music/
 musiclist.json
 node_modules
+config.js
+main.css
+js/APlayer.js
+css/APlayer.css
