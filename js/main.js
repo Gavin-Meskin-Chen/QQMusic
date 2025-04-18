@@ -1,5 +1,7 @@
 console.log("\n %c HeoMusic 开源静态音乐播放器 %c https://github.com/zhheo/HeoMusic \n", "color: #fadfa3; background: #030307; padding:5px 0;", "background: #fadfa3; padding:5px 0;")
 var local = false;
+let handScrollFlag = 1;
+let handScrollTime = null;
 
 if (typeof userId === 'undefined') {
   var userId = ""; // 替换为实际的默认值
@@ -316,6 +318,19 @@ window.addEventListener('resize', function() {
   }
 
 });
+
+// 处理手动滚动
+function handScrollFunc(e) {
+  handScrollFlag = 0;// 暂停自动滚动
+  clearTimeout(handScrollTime)
+  console.log("自动滚动停止\n")
+  handScrollTime = setTimeout(()=>{handScrollFlag=1;heo.scrollLyric();console.log("自动滚动恢复\n")}, 2000);// 2秒后恢复自动滚动（如果用户没有新操作）
+}
+window.onload = function () {
+  // 监听手动滚动事件
+  document.querySelector('.aplayer-lrc').addEventListener('wheel', handScrollFunc, { passive: false });
+  document.querySelector('.aplayer-lrc').addEventListener('touchmove', handScrollFunc, { passive: false });
+}
 
 // 调用
 heo.getCustomPlayList();
