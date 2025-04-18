@@ -269,11 +269,8 @@ body #nav-music {
   background: #ffffff1b;
 }
 
-
-@media screen and (min-width: 768px) {
-  #heoMusic-page .aplayer-info .aplayer-lrc:hover p {
-    filter: blur(0px);
-  }
+#heoMusic-page .aplayer-info .aplayer-lrc:hover p {
+  filter: blur(0px);
 }
 
 #heoMusic-page .aplayer .aplayer-lrc:after,
