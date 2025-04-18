@@ -150,6 +150,7 @@ body #nav-music {
   float: none;
   width: 300px;
   height: 300px;
+  margin-left: calc(-8px - 5px);  /* 列表margin 8px 加上 滚动条宽度 5px */
   border-radius: 12px;
   z-index: 999;
   position: relative;
@@ -166,6 +167,7 @@ body #nav-music {
   height: 300px;
   position: absolute;
   top: 20px;
+  margin-left: calc(-8px * 1.08 - 5px * 1.08);  /* 列表margin 8px 加上 滚动条宽度 5px 补上 scale 影响*/
   filter: blur(16px) opacity(0.56);
   transform: scale(0.82, 0.86);
   z-index: -1;
@@ -385,8 +387,6 @@ body #nav-music {
   height: 100%;
   flex: 1;
   min-width: 200px;
-  margin-right: calc(-8px - 5px);
-  /* 列表margin 8px 加上 滚动条宽度 5px */
 }
  
 #heoMusic-page ol::-webkit-scrollbar-thumb {

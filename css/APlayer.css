@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 5px;
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
