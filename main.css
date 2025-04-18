@@ -143,7 +143,7 @@ body #nav-music {
 }
 
 #heoMusic-page ol > li:hover {
-  background: var(--heo-black-op);
+  background: #ffffff27;
   border-radius: 6px;
 }
 #heoMusic-page .aplayer-pic {
@@ -399,7 +399,7 @@ body #nav-music {
   opacity: 0.6;
 }
 #heoMusic-page ol > li.aplayer-list-light {
-  background: var(--heo-black-op);
+  background: #ffffff24;
   border-radius: 6px;
   height: 60px;
   display: flex;
