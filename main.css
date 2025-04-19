@@ -139,7 +139,8 @@ body #nav-music {
 
 #heoMusic-page .aplayer-body {
   width: 70%;
-  height: 100%;
+  height: calc(100% + 60px);
+  margin-top: -60px;
 }
 
 #heoMusic-page ol > li:hover {
